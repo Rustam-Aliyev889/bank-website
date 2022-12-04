@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <div class="menu-bar">
+        <h1 class="logo">Your<span>Bank.</span></h1>
+        <ul>
+          <li><a href="HTML.html">Home</a></li>
+          <li><a href="registration-form.html">Create Account</a></li>
+          <li><a href="#">Services <i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                <ul>
+                    <li><a href="registration-form.html">Create Account</a></li>
+                    <li><a href="HTML.html#products">Credit Cards</a></li> 
+                    <li><a href="#HTML.html#products">Loans</a></li>
+                    <li><a href="#HTML.html#products">Mortgages</a></li>
+                    <li><a href="HTML.html#investments">Investing</a></li>
+                    <li><a href="HTML.html#products">Insurance</a></li>
+                    <li><a href="HTML.html#charity">Charity</a></li>
+                  </ul>
+                </div>
+          <li><a href="#footer">Contact us</a></li>
+        </ul>
+        <ul class="login-details">
+          <li><a href="sign-in-form.html">Sign In</a></li>
+          <li><a href="registration-form.html">Register</a></li>
+        </ul>
+      </div> 
+
+    <h1 class="main">Registration Form</h1>
+    <p class="main">Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="c-email">Confirm Your Email: <input id="c-email" name="c-email" type="email" required /></label>
+        <label for="password">Create a Password: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="c-password">Confirm Your Password: <input id="c-password" name="c-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+        <label for="joint
+        -account"><input id="joint-account" type="radio" name="account-type" class="inline" /> Joint Account</label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=581730217381&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=EAIaIQobChMI0JDMi8Sj-wIVtoBQBh11SQ27EAAYASAAEgLZavD_BwE">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">News</option>
+            <option value="2">Social Media</option>
+            <option value="3">Friend/Relative</option>
+            <option value="4">Internet</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <!--<label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>-->
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Site footer -->
+    <footer id="footer">
+        <div class="footer">
+          <h1>About Us.</h1>
+          <p><i>Your Bank is the fifth-largest commercial bank by assets in the UK, with branches in 26 countries.It is a full-service bank that offers all kinds of accounts, CDs, loans and other financial services. It also offers highly rated online and mobile banking tools. Our Bank is one of several big banks that have become more proactive about digital banking in recent years.</i></p>
+        </div>
+        <div class="footer">
+          <h3>Help and support:</h3>
+          <h4>Telephone: +44 023 0156739</h4>
+          <h4>Email: example@gmail.com</h4>
+          <h4>Main office addrress: London. Real road 32. SW111 7RA</h4>
+        </div>
+        <div class="footer">
+          <h3>Follow us on:</h3>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </footer>
+  </body>
+</html>
